@@ -1,0 +1,32 @@
+
+/* Basic overrides and small utilities */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Inter:wght@300;400;600;700&display=swap');
+
+:root {
+	--brand-yellow: #caa232;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+	background-color: #ffffff;
+	color: #111827;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Playfair Display', Georgia, serif;
+}
+
+.backdrop-brightness-50 {
+	background-color: rgba(0,0,0,0.4);
+}
+
+/* small responsive tweaks */
+@media (max-width: 640px) {
+	header .max-w-3xl h1 { font-size: 1.75rem; }
+}
+
