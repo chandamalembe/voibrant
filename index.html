@@ -1,132 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Print Bold. Brand Smart. We don’t just Print — We build Brands. Bold design. 🧠 Smart strategy. 📦 Flawless delivery. Location: Mukuni House Second Floor office No 2.4 Kabwe.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Print Bold. Brand Smart. We don’t just Print — We build Brands. Bold design. 🧠 Smart strategy. 📦 Flawless delivery. Location: Mukuni House Second Floor office No 2.4 Kabwe."
+    />
     <title>VoiBrant Media Creative</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+  </head>
+  <body>
     <nav class="sticky top-0 z-50 bg-white shadow-sm">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-2xl font-bold">Brandify</div>
-            <ul class="hidden md:flex gap-8 text-sm uppercase font-semibold">
-                <li><a href="#studio" class="hover:text-yellow-600">Studio</a></li>
-                <li><a href="#about" class="hover:text-yellow-600">About</a></li>
-                <li><a href="#services" class="hover:text-yellow-600">Services</a></li>
-                <li><a href="#contact" class="hover:text-yellow-600">Contact</a></li>
-            </ul>
-            <button id="mobileMenuBtn" class="md:hidden text-2xl">☰</button>
-        </div>
-        <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gray-200 p-4">
-            <ul class="space-y-3 text-sm uppercase font-semibold">
-                <li><a href="#studio" class="hover:text-yellow-600">Studio</a></li>
-                <li><a href="#about" class="hover:text-yellow-600">About</a></li>
-                <li><a href="#services" class="hover:text-yellow-600">Services</a></li>
-                <li><a href="#contact" class="hover:text-yellow-600">Contact</a></li>
-            </ul>
-        </div>
+      <div
+        class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <div class="text-2xl font-bold">VoiBrant Media</div>
+        <ul class="hidden md:flex gap-8 text-sm uppercase font-semibold">
+          <li><a href="#about" class="hover:text-yellow-600">About</a></li>
+          <li>
+            <a href="#services" class="hover:text-yellow-600">Services</a>
+          </li>
+          <li><a href="#contact" class="hover:text-yellow-600">Contact</a></li>
+        </ul>
+        <button id="mobileMenuBtn" class="md:hidden text-2xl">☰</button>
+      </div>
+      <div
+        id="mobileMenu"
+        class="hidden md:hidden bg-white border-t border-gray-200 p-4"
+      >
+        <ul class="space-y-3 text-sm uppercase font-semibold">
+          <li><a href="#about" class="hover:text-yellow-600">About</a></li>
+          <li>
+            <a href="#services" class="hover:text-yellow-600">Services</a>
+          </li>
+          <li><a href="#contact" class="hover:text-yellow-600">Contact</a></li>
+        </ul>
+      </div>
     </nav>
 
-    <header class="bg-[url('https://images.unsplash.com/photo-1505685296765-3a2736de412f?auto=format&fit=crop&w=2000&q=80')] bg-cover bg-center text-white">
-        <div class="backdrop-brightness-50">
-            <div class="max-w-7xl mx-auto px-6 py-28">
-                <div class="max-w-3xl">
-                    <p class="text-sm uppercase tracking-widest mb-4">Studio</p>
-                    <h1 class="text-5xl md:text-6xl font-extrabold leading-tight">Creator of Quality Designs and Innovator of Fresh Ideas</h1>
-                    <p class="mt-6 text-lg text-gray-100/90">Experts in innovative thinking, creative ideas and cutting-edge technology solutions.</p>
-                    <div class="mt-8">
-                        <a href="#contact" class="inline-block bg-yellow-600 text-white px-6 py-3 rounded-full font-semibold">Play Video</a>
-                    </div>
-                </div>
+    <header class="bg-[url('./img/banner.jpg')] bg-cover bg-center text-white">
+      <div class="backdrop-brightness-50">
+        <div class="max-w-7xl mx-auto px-6 py-28">
+          <div class="max-w-3xl">
+            <p class="text-sm tracking-widest mb-4">VoiBrant</p>
+            <h1 class="text-5xl md:text-6xl font-extrabold leading-tight">
+              Print Bold. Brand Smart.
+            </h1>
+            <p class="mt-6 text-lg text-gray-100/90">
+              We don’t just Print — We build Brands. Bold design. 🧠 Smart
+              strategy. 📦 Flawless delivery. Location: Mukuni House Second
+              Floor office No 2.4 Kabwe.
+            </p>
+            <div class="mt-8">
+              <a
+                href="#contact"
+                class="inline-block bg-yellow-600 text-white px-6 py-3 rounded-full font-semibold"
+                >Contact Us</a
+              >
             </div>
+          </div>
         </div>
+      </div>
     </header>
 
     <main class="max-w-7xl mx-auto px-6 py-16">
-        <section class="mb-20">
-            <h2 class="text-4xl font-bold mb-8">Our Latest Works.</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                <article class="bg-white shadow-sm rounded overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=60" alt="Work 1" class="w-full h-56 object-cover">
-                    <div class="p-4 text-center">
-                        <h3 class="font-semibold text-lg">Time Management</h3>
-                        <p class="text-sm text-gray-400 mt-2">Add text.</p>
-                    </div>
-                </article>
-                <article class="bg-white shadow-sm rounded overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=60" alt="Work 2" class="w-full h-56 object-cover">
-                    <div class="p-4 text-center">
-                        <h3 class="font-semibold text-lg">Product Experience</h3>
-                        <p class="text-sm text-gray-400 mt-2">Add text.</p>
-                    </div>
-                </article>
-                <article class="bg-white shadow-sm rounded overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=800&q=60" alt="Work 3" class="w-full h-56 object-cover">
-                    <div class="p-4 text-center">
-                        <h3 class="font-semibold text-lg">Brand Strategy</h3>
-                        <p class="text-sm text-gray-400 mt-2">Add text.</p>
-                    </div>
-                </article>
-                <article class="bg-white shadow-sm rounded overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=800&q=60" alt="Work 4" class="w-full h-56 object-cover">
-                    <div class="p-4 text-center">
-                        <h3 class="font-semibold text-lg">Elegant Design</h3>
-                        <p class="text-sm text-gray-400 mt-2">Add text.</p>
-                    </div>
-                </article>
+      <section class="mb-20">
+        <h2 class="text-4xl font-bold mb-8">Our Latest Works.</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <article class="bg-white shadow-sm rounded overflow-hidden">
+            <img
+              src="https://maps.app.goo.gl/zkHbFYpZRRAHfZmb6"
+              alt="Work 1"
+              class="w-full h-56 object-cover"
+            />
+            <div class="p-4 text-center">
+              <h3 class="font-semibold text-lg">Time Management</h3>
+              <p class="text-sm text-gray-400 mt-2">Add text.</p>
             </div>
-        </section>
+          </article>
+          <article class="bg-white shadow-sm rounded overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=60"
+              alt="Work 2"
+              class="w-full h-56 object-cover"
+            />
+            <div class="p-4 text-center">
+              <h3 class="font-semibold text-lg">Product Experience</h3>
+              <p class="text-sm text-gray-400 mt-2">Add text.</p>
+            </div>
+          </article>
+          <article class="bg-white shadow-sm rounded overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=800&q=60"
+              alt="Work 3"
+              class="w-full h-56 object-cover"
+            />
+            <div class="p-4 text-center">
+              <h3 class="font-semibold text-lg">Brand Strategy</h3>
+              <p class="text-sm text-gray-400 mt-2">Add text.</p>
+            </div>
+          </article>
+          <article class="bg-white shadow-sm rounded overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=800&q=60"
+              alt="Work 4"
+              class="w-full h-56 object-cover"
+            />
+            <div class="p-4 text-center">
+              <h3 class="font-semibold text-lg">Elegant Design</h3>
+              <p class="text-sm text-gray-400 mt-2">Add text.</p>
+            </div>
+          </article>
+        </div>
+      </section>
 
-        <section id="contact" class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
-            <div>
-                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80" alt="Contact" class="rounded shadow-lg">
-            </div>
-            <div>
-                <p class="text-sm uppercase tracking-wide text-gray-500">Contact</p>
-                <h2 class="text-4xl font-extrabold mt-2 mb-6">Are You Ready? Let's Go to Work!</h2>
-                <form id="contactForm" class="space-y-4 bg-white p-6 rounded shadow">
-                    <input name="name" placeholder="Name" class="w-full border border-gray-300 rounded px-3 py-2">
-                    <input name="email" placeholder="Email" class="w-full border border-gray-300 rounded px-3 py-2">
-                    <textarea name="message" rows="5" placeholder="Message" class="w-full border border-gray-300 rounded px-3 py-2"></textarea>
-                    <button type="submit" class="bg-yellow-600 text-white px-6 py-2 rounded-full font-semibold">Submit</button>
-                </form>
-            </div>
-        </section>
-
+      <section
+        id="contact"
+        class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20"
+      >
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80"
+            alt="Contact"
+            class="rounded shadow-lg"
+          />
+        </div>
+        <div>
+          <p class="text-sm uppercase tracking-wide text-gray-500">Contact</p>
+          <h2 class="text-4xl font-extrabold mt-2 mb-6">
+            Are You Ready? Let's Go to Work!
+          </h2>
+          <form id="contactForm" class="space-y-4 bg-white p-6 rounded shadow">
+            <input
+              name="name"
+              placeholder="Name"
+              class="w-full border border-gray-300 rounded px-3 py-2"
+            />
+            <input
+              name="email"
+              placeholder="Email"
+              class="w-full border border-gray-300 rounded px-3 py-2"
+            />
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="Message"
+              class="w-full border border-gray-300 rounded px-3 py-2"
+            ></textarea>
+            <button
+              type="submit"
+              class="bg-yellow-600 text-white px-6 py-2 rounded-full font-semibold"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </section>
     </main>
 
     <footer class="bg-gray-900 text-gray-200 py-12">
-        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
-                <h3 class="text-2xl font-bold text-white">Brandify</h3>
-                <p class="mt-4 text-gray-400">Add text.</p>
-            </div>
-            <div class="flex justify-between">
-                <ul class="space-y-3">
-                    <li class="uppercase font-semibold text-sm">Studio</li>
-                    <li class="uppercase font-semibold text-sm">About</li>
-                    <li class="uppercase font-semibold text-sm">Services</li>
-                </ul>
-                <ul class="space-y-3">
-                    <li class="uppercase font-semibold text-sm">Facebook</li>
-                    <li class="uppercase font-semibold text-sm">Youtube</li>
-                    <li class="uppercase font-semibold text-sm">Instagram</li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="font-semibold mb-3">Subscribe to Our Newsletter</h4>
-                <form id="subscribeForm" class="space-y-3">
-                    <input name="sub_name" placeholder="Name" class="w-full border border-gray-700 rounded px-3 py-2 bg-gray-800 text-gray-200">
-                    <input name="sub_email" placeholder="Email" class="w-full border border-gray-700 rounded px-3 py-2 bg-gray-800 text-gray-200">
-                    <button type="submit" class="mt-2 bg-yellow-600 text-white px-6 py-2 rounded-full font-semibold">Subscribe</button>
-                </form>
-            </div>
+      <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-2xl font-bold text-white">Brandify</h3>
+          <p class="mt-4 text-gray-400">Add text.</p>
         </div>
+        <div class="flex justify-between">
+          <ul class="space-y-3">
+            <li class="uppercase font-semibold text-sm">Studio</li>
+            <li class="uppercase font-semibold text-sm">About</li>
+            <li class="uppercase font-semibold text-sm">Services</li>
+          </ul>
+          <ul class="space-y-3">
+            <li class="uppercase font-semibold text-sm">Facebook</li>
+            <li class="uppercase font-semibold text-sm">Youtube</li>
+            <li class="uppercase font-semibold text-sm">Instagram</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-3">Subscribe to Our Newsletter</h4>
+          <form id="subscribeForm" class="space-y-3">
+            <input
+              name="sub_name"
+              placeholder="Name"
+              class="w-full border border-gray-700 rounded px-3 py-2 bg-gray-800 text-gray-200"
+            />
+            <input
+              name="sub_email"
+              placeholder="Email"
+              class="w-full border border-gray-700 rounded px-3 py-2 bg-gray-800 text-gray-200"
+            />
+            <button
+              type="submit"
+              class="mt-2 bg-yellow-600 text-white px-6 py-2 rounded-full font-semibold"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
