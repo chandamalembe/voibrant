@@ -85,53 +85,85 @@
     </header>
 
     <main class="max-w-7xl mx-auto px-6 py-16">
-      <section class="mb-20">
-        <h2 class="text-4xl font-bold mb-8">Our Latest Works.</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          <article class="bg-white shadow-sm rounded overflow-hidden">
-            <img
-              src="https://maps.app.goo.gl/zkHbFYpZRRAHfZmb6"
-              alt="Work 1"
-              class="w-full h-56 object-cover"
-            />
-            <div class="p-4 text-center">
-              <h3 class="font-semibold text-lg">Time Management</h3>
-              <p class="text-sm text-gray-400 mt-2">Add text.</p>
+      <section
+        id="about"
+        class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20"
+      >
+        <div>
+          <p class="text-sm uppercase tracking-wide text-gray-500">About</p>
+          <h2 class="text-4xl font-extrabold mt-2 mb-4">We Make Brands Pop</h2>
+          <p class="text-lg text-gray-700 mb-6">
+            VoiBrant Media blends bold design with smart strategy to build
+            memorable brands. From print to vehicles, packaging to apparel — we
+            bring ideas to life with craft and personality.
+          </p>
+          <ul class="space-y-2 text-gray-600">
+            <li>Brand identity & print production</li>
+            <li>Packaging & product mockups</li>
+            <li>Vehicle wraps & environmental graphics</li>
+            <li>Apparel and merchandise embroidery/printing</li>
+          </ul>
+        </div>
+        <div>
+          <img
+            src="./img/inside.jpg"
+            alt="Studio inside"
+            class="rounded shadow-lg"
+          />
+        </div>
+      </section>
+
+      <section id="services" class="mb-20">
+        <p class="text-sm uppercase tracking-wide text-gray-500">Services</p>
+        <h2 class="text-4xl font-extrabold mt-2 mb-4">Previous Works</h2>
+        <p class="text-gray-600 mb-6">
+          A rotating selection of projects we've brought to life.
+        </p>
+
+        <div class="services-marquee overflow-hidden rounded-lg">
+          <div class="marquee-track flex items-center">
+            <div class="marquee-item px-4">
+              <img src="./img/products.jpg" alt="products" />
             </div>
-          </article>
-          <article class="bg-white shadow-sm rounded overflow-hidden">
-            <img
-              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=60"
-              alt="Work 2"
-              class="w-full h-56 object-cover"
-            />
-            <div class="p-4 text-center">
-              <h3 class="font-semibold text-lg">Product Experience</h3>
-              <p class="text-sm text-gray-400 mt-2">Add text.</p>
+            <div class="marquee-item px-4">
+              <img src="./img/bottles.jpg" alt="bottles" />
             </div>
-          </article>
-          <article class="bg-white shadow-sm rounded overflow-hidden">
-            <img
-              src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=800&q=60"
-              alt="Work 3"
-              class="w-full h-56 object-cover"
-            />
-            <div class="p-4 text-center">
-              <h3 class="font-semibold text-lg">Brand Strategy</h3>
-              <p class="text-sm text-gray-400 mt-2">Add text.</p>
+            <div class="marquee-item px-4">
+              <img src="./img/cups.jpg" alt="cups" />
             </div>
-          </article>
-          <article class="bg-white shadow-sm rounded overflow-hidden">
-            <img
-              src="https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=800&q=60"
-              alt="Work 4"
-              class="w-full h-56 object-cover"
-            />
-            <div class="p-4 text-center">
-              <h3 class="font-semibold text-lg">Elegant Design</h3>
-              <p class="text-sm text-gray-400 mt-2">Add text.</p>
+            <div class="marquee-item px-4">
+              <img src="./img/board.jpg" alt="board" />
             </div>
-          </article>
+            <div class="marquee-item px-4">
+              <img src="./img/vehicle.jpg" alt="vehicle" />
+            </div>
+            <div class="marquee-item px-4">
+              <img src="./img/embroidery.jpg" alt="embroidery" />
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
+          <img
+            src="./img/big.jpg"
+            alt="work"
+            class="rounded shadow-sm hover:scale-105 transition-transform"
+          />
+          <img
+            src="./img/room.jpg"
+            alt="work"
+            class="rounded shadow-sm hover:scale-105 transition-transform"
+          />
+          <img
+            src="./img/inside.jpg"
+            alt="work"
+            class="rounded shadow-sm hover:scale-105 transition-transform"
+          />
+          <img
+            src="./img/products.jpg"
+            alt="work"
+            class="rounded shadow-sm hover:scale-105 transition-transform"
+          />
         </div>
       </section>
 
@@ -182,19 +214,20 @@
     <footer class="bg-gray-900 text-gray-200 py-12">
       <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
-          <h3 class="text-2xl font-bold text-white">Brandify</h3>
-          <p class="mt-4 text-gray-400">Add text.</p>
+          <h3 class="text-2xl font-bold text-white">VoiBrant</h3>
+          <p class="mt-4 text-gray-400">We Do Everything Differently.</p>
         </div>
         <div class="flex justify-between">
           <ul class="space-y-3">
-            <li class="uppercase font-semibold text-sm">Studio</li>
             <li class="uppercase font-semibold text-sm">About</li>
             <li class="uppercase font-semibold text-sm">Services</li>
+            <li class="uppercase font-semibold text-sm">Contact</li>
           </ul>
           <ul class="space-y-3">
             <li class="uppercase font-semibold text-sm">Facebook</li>
-            <li class="uppercase font-semibold text-sm">Youtube</li>
             <li class="uppercase font-semibold text-sm">Instagram</li>
+            <li class="uppercase font-semibold text-sm">X</li>
+            <li class="uppercase font-semibold text-sm">tiktok</li>
           </ul>
         </div>
         <div>
