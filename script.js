@@ -73,4 +73,89 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     img.addEventListener("mouseleave", () => (img.style.transform = ""));
   });
+
+  // Smooth scrolling for in-page links with ease-in-out acceleration
+  const topNav = document.querySelector("nav");
+  const navOffset = topNav ? topNav.offsetHeight : 0;
+
+  function easeInOutCubic(t) {
+    return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+  }
+
+  function smoothScrollTo(targetY, duration = 800) {
+    const startY = window.scrollY || window.pageYOffset;
+    const distance = targetY - startY;
+    const startTime = performance.now();
+
+    return new Promise((resolve) => {
+      function step(now) {
+        const elapsed = now - startTime;
+        const t = Math.min(1, elapsed / duration);
+        const eased = easeInOutCubic(t);
+        window.scrollTo(0, Math.round(startY + distance * eased));
+        if (t < 1) requestAnimationFrame(step);
+        else resolve();
+      }
+      requestAnimationFrame(step);
+    });
+  }
+
+  document.addEventListener("click", (e) => {
+    const a = e.target.closest("a[href^='#']");
+    if (!a) return;
+    const hash = a.getAttribute("href");
+    if (!hash || hash === "#") return;
+    const targetEl = document.querySelector(hash);
+    if (!targetEl) return;
+    e.preventDefault();
+
+    const rect = targetEl.getBoundingClientRect();
+    const start = window.scrollY || window.pageYOffset;
+    const targetY = Math.max(0, start + rect.top - navOffset - 12);
+    const distance = Math.abs(targetY - start);
+    const duration = Math.min(1400 + distance * 0.25, 2400);
+
+    smoothScrollTo(targetY, duration).then(() => {
+      try {
+        history.pushState(null, "", hash);
+      } catch (err) {
+        location.hash = hash;
+      }
+      const mobileMenu = document.getElementById("mobileMenu");
+      if (mobileMenu && !mobileMenu.classList.contains("hidden")) {
+        mobileMenu.classList.add("hidden");
+      }
+    });
+  });
+
+  // Back-to-top button: appear when scrolling up or at bottom
+  const backBtn = document.getElementById("backToTopBtn");
+  if (backBtn) {
+    let lastY = window.scrollY || window.pageYOffset;
+    let ticking = false;
+
+    function updateBackBtn() {
+      const currentY = window.scrollY || window.pageYOffset;
+      const atBottom =
+        window.innerHeight + currentY >=
+        document.documentElement.scrollHeight - 6;
+      const scrollingUp = currentY < lastY && currentY > 120;
+      if (scrollingUp || atBottom) backBtn.classList.add("visible");
+      else backBtn.classList.remove("visible");
+      lastY = currentY;
+      ticking = false;
+    }
+
+    window.addEventListener("scroll", () => {
+      if (!ticking) {
+        requestAnimationFrame(updateBackBtn);
+        ticking = true;
+      }
+    });
+
+    backBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      smoothScrollTo(0, 900);
+    });
+  }
 });

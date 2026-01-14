@@ -9,7 +9,7 @@
     />
     <title>VoiBrant Media Creative</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
     <!-- Favicon -->
     <link
       rel="apple-touch-icon"
@@ -59,23 +59,22 @@
       </div>
     </nav>
 
-    <header class="bg-[url('./img/banner.jpg')] bg-cover bg-center text-white">
-      <div class="backdrop-brightness-50">
+    <header role="banner" class="bg-[url('./img/big.jpg')] bg-cover bg-center text-white">
+      <div class="backdrop-brightness-75">
         <div class="max-w-7xl mx-auto px-6 py-28">
           <div class="max-w-3xl">
-            <p class="text-sm tracking-widest mb-4">VoiBrant</p>
             <h1 class="text-5xl md:text-6xl font-extrabold leading-tight">
               Print Bold. Brand Smart.
             </h1>
-            <p class="mt-6 text-lg text-gray-100/90">
-              We don’t just Print — We build Brands. Bold design. 🧠 Smart
-              strategy. 📦 Flawless delivery. Location: Mukuni House Second
-              Floor office No 2.4 Kabwe.
+            <p class="text-lg text-gray-100/90">
+              We don’t just Print — We build Brands.</p> 
+            <p class="text-lg text-gray-100/90">Bold design. 🧠 Smart strategy. 📦 Flawless delivery.</p>
+            <p class="text-lg text-gray-100/90">Location: Mukuni House Second Floor office No 2.4 Kabwe.</p>
             </p>
             <div class="mt-8">
               <a
                 href="#contact"
-                class="inline-block bg-yellow-600 text-white px-6 py-3 rounded-full font-semibold"
+                class="inline-block btn-color text-white px-6 py-3 rounded-full font-semibold"
                 >Contact Us</a
               >
             </div>
@@ -85,48 +84,90 @@
     </header>
 
     <main class="max-w-7xl mx-auto px-6 py-16">
-      <section
-        id="about"
-        class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20"
-      >
-        <div>
-          <p class="text-sm uppercase tracking-wide text-gray-500">About</p>
-          <h2 class="text-4xl font-extrabold mt-2 mb-4">We Make Brands Pop</h2>
-          <p class="text-lg text-gray-700 mb-6">
-            VoiBrant Media blends bold design with smart strategy to build
-            memorable brands. From print to vehicles, packaging to apparel — we
-            bring ideas to life with craft and personality.
-          </p>
-          <ul class="space-y-2 text-gray-600">
-            <li>Brand identity & print production</li>
-            <li>Packaging & product mockups</li>
-            <li>Vehicle wraps & environmental graphics</li>
-            <li>Apparel and merchandise embroidery/printing</li>
-          </ul>
-        </div>
-        <div>
-          <img
-            src="./img/inside.jpg"
-            alt="Studio inside"
-            class="rounded shadow-lg"
-          />
-        </div>
-      </section>
+      <section id="about" class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-20">
+          <div>
+            <p class="text-sm uppercase tracking-wide text-gray-500">About</p>
+            <h2 class="text-4xl font-extrabold mt-2 mb-4">We Make Brands Pop — Strategically</h2>
 
-      <section id="services" class="mb-20">
-        <p class="text-sm uppercase tracking-wide text-gray-500">Services</p>
-        <h2 class="text-4xl font-extrabold mt-2 mb-4">Previous Works</h2>
-        <p class="text-gray-600 mb-6">
-          A rotating selection of projects we've brought to life.
-        </p>
+            <p class="text-lg text-gray-700 mb-4">
+              VoiBrant Media is a full-service creative studio specialising in
+              brand identity, print production and environmental graphics. We
+              combine bold visual thinking with practical production know‑how to
+              deliver work that looks remarkable and performs reliably.
+            </p>
 
+            <h3 class="text-xl font-semibold mt-4">Our Mission</h3>
+            <p class="text-gray-700 mb-4">
+              To help businesses stand out with confident design and dependable
+              delivery — from the first concept to the finished product.
+            </p>
+
+            <h3 class="text-xl font-semibold mt-4">Our Vision</h3>
+            <p class="text-gray-700 mb-4">
+              To be the trusted creative partner for brands that want to be seen
+              and remembered across print, packaging, apparel and physical spaces.
+            </p>
+
+            <h3 class="text-xl font-semibold mt-4">Core Values</h3>
+            <ul class="list-disc pl-5 text-gray-600 mb-4">
+              <li><strong>Craft:</strong> Quality and attention to detail in every deliverable.</li>
+              <li><strong>Clarity:</strong> Clear thinking and direct communication, from brief to build.</li>
+              <li><strong>Reliability:</strong> Meeting deadlines and production standards without surprises.</li>
+              <li><strong>Collaboration:</strong> Working as a partner, not a vendor.</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold mt-4">What We Do (at a glance)</h3>
+            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-gray-600 mb-4">
+              <li>Brand identity & logotype systems</li>
+              <li>Packaging design & pre-press</li>
+              <li>Print production & fulfillment</li>
+              <li>Vehicle wraps & signage</li>
+              <li>Apparel & merchandise printing/embroidery</li>
+              <li>Product mockups & photography direction</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold mt-4">Our Process</h3>
+            <ol class="list-decimal pl-5 text-gray-600 mb-6">
+              <li><strong>Discover:</strong> We listen and audit the brand context.</li>
+              <li><strong>Strategise:</strong> We define a clear creative direction.</li>
+              <li><strong>Create:</strong> Design, refine and prepare files for production.</li>
+              <li><strong>Deliver:</strong> Manage production and quality control to completion.</li>
+            </ol>
+
+            <div class="bg-gray-50 border border-gray-100 p-4 rounded">
+              <p class="font-semibold mb-2">Credentials</p>
+              <p class="text-gray-600">Serving small businesses and regional brands with over a decade of combined team experience in design and production.</p>
+            </div>
+
+            <div class="mt-6">
+              <a href="#contact" class="inline-block bg-yellow-600 text-white px-6 py-3 rounded-full font-semibold">Work with us</a>
+            </div>
+          </div>
+
+          <aside class="flex flex-col gap-6">
+            <div class="rounded shadow-lg overflow-hidden">
+              <img src="./img/inside.jpg" alt="Studio inside" style="width:100%;height:100%;object-fit:cover;display:block;" />
+            </div>
+
+            <div class="space-y-2">
+              <h4 class="text-lg font-semibold">Meet the team</h4>
+              <p class="text-gray-600">A small, multi-disciplinary team of designers, print technologists and project managers dedicated to precision and creativity.</p>
+            </div>
+
+            <div class="space-y-2">
+              <h4 class="text-lg font-semibold">Why clients choose us</h4>
+              <ul class="list-disc pl-5 text-gray-600">
+                <li>End-to-end service from design to fulfilment</li>
+                <li>Transparent pricing and realistic timelines</li>
+                <li>Proven production partners and quality guarantees</li>
+              </ul>
+            </div>
+          </aside>
+        </section>
         <div class="services-marquee overflow-hidden rounded-lg">
           <div class="marquee-track flex items-center">
             <div class="marquee-item px-4">
               <img src="./img/products.jpg" alt="products" />
-            </div>
-            <div class="marquee-item px-4">
-              <img src="./img/bottles.jpg" alt="bottles" />
             </div>
             <div class="marquee-item px-4">
               <img src="./img/cups.jpg" alt="cups" />
@@ -137,33 +178,7 @@
             <div class="marquee-item px-4">
               <img src="./img/vehicle.jpg" alt="vehicle" />
             </div>
-            <div class="marquee-item px-4">
-              <img src="./img/embroidery.jpg" alt="embroidery" />
-            </div>
           </div>
-        </div>
-
-        <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
-          <img
-            src="./img/big.jpg"
-            alt="work"
-            class="rounded shadow-sm hover:scale-105 transition-transform"
-          />
-          <img
-            src="./img/room.jpg"
-            alt="work"
-            class="rounded shadow-sm hover:scale-105 transition-transform"
-          />
-          <img
-            src="./img/inside.jpg"
-            alt="work"
-            class="rounded shadow-sm hover:scale-105 transition-transform"
-          />
-          <img
-            src="./img/products.jpg"
-            alt="work"
-            class="rounded shadow-sm hover:scale-105 transition-transform"
-          />
         </div>
       </section>
 
@@ -173,7 +188,7 @@
       >
         <div>
           <img
-            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80"
+            src="./img/banner.jpg"
             alt="Contact"
             class="rounded shadow-lg"
           />
@@ -181,7 +196,7 @@
         <div>
           <p class="text-sm uppercase tracking-wide text-gray-500">Contact</p>
           <h2 class="text-4xl font-extrabold mt-2 mb-6">
-            Are You Ready? Let's Go to Work!
+            Are You Ready? Let's Get to Work!
           </h2>
           <form id="contactForm" class="space-y-4 bg-white p-6 rounded shadow">
             <input
@@ -202,7 +217,7 @@
             ></textarea>
             <button
               type="submit"
-              class="bg-yellow-600 text-white px-6 py-2 rounded-full font-semibold"
+              class="btn-color text-white px-6 py-2 rounded-full font-semibold"
             >
               Submit
             </button>
@@ -219,15 +234,26 @@
         </div>
         <div class="flex justify-between">
           <ul class="space-y-3">
-            <li class="uppercase font-semibold text-sm">About</li>
-            <li class="uppercase font-semibold text-sm">Services</li>
-            <li class="uppercase font-semibold text-sm">Contact</li>
+            <li class="uppercase font-semibold text-sm">
+              <a href="#about" class="hover:text-yellow-600">About</a>
+            </li>
+            <li class="uppercase font-semibold text-sm">
+              <a href="#services" class="hover:text-yellow-600">Services</a>
+            </li>
+            <li class="uppercase font-semibold text-sm">
+              <a href="#contact" class="hover:text-yellow-600">Contact</a>
+            </li>
           </ul>
           <ul class="space-y-3">
-            <li class="uppercase font-semibold text-sm">Facebook</li>
-            <li class="uppercase font-semibold text-sm">Instagram</li>
-            <li class="uppercase font-semibold text-sm">X</li>
-            <li class="uppercase font-semibold text-sm">tiktok</li>
+            <li class="uppercase font-semibold text-sm">
+              <a href="https://web.facebook.com/voibrantmediacreative" target="_blank">Facebook</a>
+            </li>
+            <li class="uppercase font-semibold text-sm">
+              <a href="https://www.instagram.com/voibrantmediacreative" target="_blank">Instagram</a>
+            </li>
+            <li class="uppercase font-semibold text-sm">
+              <a href="https://api.whatsapp.com/send?phone=%2B260975266088&fbclid=IwY2xjawPQcD5leHRuA2FlbQIxMABicmlkETFGMWtWOWtDdFpGaGRrVTFYc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHqjWQYsk-VXe8zIZns9HKCaBTRhjqIf_Hq4tOcePdtTZ6-JR4E7QgzglyrZg_aem_54euGdZkjJ4wyp31Gx795w" target="_blank">WhatsApp</a>
+            </li>
           </ul>
         </div>
         <div>
@@ -245,7 +271,7 @@
             />
             <button
               type="submit"
-              class="mt-2 bg-yellow-600 text-white px-6 py-2 rounded-full font-semibold"
+              class="mt-2 btn-color text-white px-6 py-2 rounded-full font-semibold"
             >
               Subscribe
             </button>
@@ -253,7 +279,7 @@
         </div>
       </div>
     </footer>
-
-    <script src="script.js"></script>
+    <button id="backToTopBtn" class="back-to-top" aria-label="Back to top">↑</button>
+    <script src="./script.js"></script>
   </body>
 </html>
