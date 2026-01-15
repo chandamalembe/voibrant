@@ -150,3 +150,11 @@ h6 {
     height: 44px;
   }
 }
+
+/* Quote block styles */
+.quote {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 1.5rem;
+  min-height: 120px;
+}
