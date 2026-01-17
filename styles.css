@@ -156,5 +156,5 @@ h6 {
   max-width: 80%;
   margin: 0 auto;
   padding: 1.5rem;
-  min-height: 120px;
+  /* min-height: 120px; */
 }
