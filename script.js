@@ -12,13 +12,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const mobileLinks = mobileMenu?.querySelectorAll("a") ?? [];
   mobileLinks.forEach((link) =>
-    link.addEventListener("click", () => mobileMenu.classList.add("hidden"))
+    link.addEventListener("click", () => mobileMenu.classList.add("hidden")),
   );
 
   if (contactForm) {
     contactForm.addEventListener("submit", function (e) {
       e.preventDefault();
-      alert("Thanks! Your message has been received.");
+
+      const name = contactForm.name.value.trim();
+      const message = contactForm.message.value.trim();
+
+      if (!name || !message) {
+        alert("Please fill in name and message.");
+        return;
+      }
+
+      const whatsappMessage = `Hello VoiBrant! My name is ${encodeURIComponent(name)}. %0A${encodeURIComponent(message)}`;
+      const whatsappUrl = `https://api.whatsapp.com/send?phone=260975266088&text=${whatsappMessage}`;
+
+      window.open(whatsappUrl, "_blank");
+
+      alert(
+        "Opening WhatsApp with your message. Please send it to complete your inquiry.",
+      );
       contactForm.reset();
     });
   }
@@ -39,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Pause on hover
     track.addEventListener("mouseenter", () => track.classList.add("paused"));
     track.addEventListener("mouseleave", () =>
-      track.classList.remove("paused")
+      track.classList.remove("paused"),
     );
 
     // set a duration based on total width for a nicer speed feel
@@ -55,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (entry.isIntersecting) entry.target.classList.add("in-view");
       });
     },
-    { threshold: 0.18 }
+    { threshold: 0.18 },
   );
 
   document
