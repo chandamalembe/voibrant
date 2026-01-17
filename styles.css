@@ -158,3 +158,8 @@ h6 {
   padding: 1.5rem;
   /* min-height: 120px; */
 }
+
+.services-list {
+  max-width: 80%;
+  margin: 0 auto;
+}
