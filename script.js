@@ -39,14 +39,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  if (subscribeForm) {
-    subscribeForm.addEventListener("submit", function (e) {
-      e.preventDefault();
-      alert("Thanks for subscribing!");
-      subscribeForm.reset();
-    });
-  }
-
   // Setup marquee: duplicate items for seamless scroll
   document.querySelectorAll(".marquee-track").forEach((track) => {
     const items = Array.from(track.children);
