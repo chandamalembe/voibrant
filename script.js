@@ -166,4 +166,19 @@ document.addEventListener("DOMContentLoaded", () => {
       smoothScrollTo(0, 900);
     });
   }
+
+  // Hide/show nav on scroll
+  let lastScrollTop = 0;
+  const nav = document.querySelector("nav");
+  window.addEventListener("scroll", () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollTop > lastScrollTop && scrollTop > 100) {
+      // Scrolling down and past 100px
+      nav.style.transform = "translateY(-100%)";
+    } else {
+      // Scrolling up
+      nav.style.transform = "translateY(0)";
+    }
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+  });
 });
