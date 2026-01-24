@@ -31,5 +31,8 @@ yarn-error.log*
 .env.production
 
 # Optional: Original images if you prefer to keep only WebP in repo
-# img/*.jpg
+img/*.jpg
 # img/*.png
+
+# Optional: Markdown preview files
+todo.md
